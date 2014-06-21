@@ -1,0 +1,20 @@
+#CodeBook
+
+This file is based off the source data code book available in `UCI HAR Dataset/features_info.txt`. For complete details, please see that file.
+
+* The first field is a sequential identifier with no significance
+* `Activity` is a string identifying which activity was being preformed for these measurements. There are six options:
+	* WALKING 
+	* WALKING_UPSTAIRS 
+	* WALKING_DOWNSTAIRS 
+	* SITTING 
+	* STANDING 
+	* LAYING
+* The remainder of the fields are named in a systematic fashion
+	* Those starting with a `t` are time domain and `f` indicates frequency domain
+	* `Body` indicates the non-gravity component of the acceleration. `Gravity` is the gravity component.
+	* `Acc` is the base acceleration signal which was decomposed into `GyroJerk` and `AccJerk`. 
+	* The -Z, -X, or -Z suffix indicates the axis along which the signal was measuresd.
+	* `Mag` indicates the absolute magntiude a of a three-dimensional signal.
+	* `std()` indicates the standard deviation of that signal, `mean()` is the arithmatic mean
+* The data present is the mean of the source data for a given participant and activity. The original data is dimensionless and scaled to [-1,1] and thus the mean has no units.
